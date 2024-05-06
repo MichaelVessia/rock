@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Sim</title>
+    <style>
+      /* Button styling */
+      #toggleButton {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      #toggleButton:hover {
+        background-color: #45a049;
+      }
+
+      /* Canvas styling */
+      #gameCanvas {
+        border: 1px solid black;
+        background-color: #f0f0f0;
+      }
+
+      #container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        max-height: 90vh;
+      }
+
+      #legend {
+        display: flex;
+        gap: 0.5rem;
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-IaSvIOoK.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div id="legend">
+        <div id="rock">Rock</div>
+        <div id="paper">Paper</div>
+        <div id="scissors">Scissors</div>
+      </div>
+      <canvas id="gameCanvas"></canvas>
+      <button id="toggleButton">Start Simulation</button>
+    </div>
+  </body>
+</html>
